@@ -6,6 +6,8 @@ import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import { connect, Provider } from 'react-redux';
 
+/* global SERVICE_URL */
+
 // actions
 const SETTIMEOUT_TEST = 'SETTIMEOUT_TEST';
 
@@ -16,7 +18,7 @@ const setTimeoutTest = test => ({
 
 const getTimeoutTest = () => dispatch => (
   setTimeout(() => {
-    dispatch(setTimeoutTest('abc'));
+    dispatch(setTimeoutTest(SERVICE_URL));
   }, 1000)
 );
 

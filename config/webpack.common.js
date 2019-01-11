@@ -1,11 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
+
 module.exports = {
-  entry: ['./src/index.jsx'],
+  entry: [path.resolve(__dirname, '../src/index.jsx')],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './dist/'),
+    path: path.resolve(__dirname, '../dist/'),
     // publicPath: './',
   },
   module: {

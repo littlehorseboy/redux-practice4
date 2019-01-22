@@ -22,12 +22,12 @@ class JSONFormat extends React.Component {
       this.setState({
         JSONFormatString: string,
       });
-    } catch (e) {
+    } catch (exception) {
       this.setState({
         JSONFormatString: '無法解析',
       });
 
-      console.error(e);
+      console.error(exception);
     }
   }
 

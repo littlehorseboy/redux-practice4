@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 
 module.exports = {
-  entry: [path.resolve(__dirname, '../src/JSONFormat.jsx')],
+  entry: [path.resolve(__dirname, '../src/index.jsx')],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '../dist/'),

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class JSONFormat extends React.Component {
   constructor(props) {
@@ -54,7 +53,4 @@ class JSONFormat extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <JSONFormat />,
-  document.querySelector('#app'),
-);
+export default JSONFormat;

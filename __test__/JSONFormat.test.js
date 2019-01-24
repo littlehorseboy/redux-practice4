@@ -10,8 +10,11 @@ it('先抓得到再說', () => {
     <JSONFormat />,
   );
 
+  const textAreaNodes = ReactDOM.findDOMNode(textAreas);
+
+  expect(textAreaNodes.textContent).toEqual('JSONFormat => ');
+
   // const textAreas = ReactTestUtils.findRenderedDOMComponentWithTag(textAreas, 'textarea');
 
-  expect(textAreas.textContent).toEqual(undefined);
   // expect(1).toEqual(1);
 });
